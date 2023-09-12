@@ -33,8 +33,7 @@ const Home = () => {
       <div className="topmainContainer">
         <div className="textContainer">
           <motion.h1 {...easeScaleUp}>Hey, I am MD TAUFIK</motion.h1>
-          <motion.p {...easeMoveTop}>I am front end developer build modern and responsive website using various technology like reactjs and nextjs</motion.p>
-          <motion.img 
+           <motion.img 
           initial={{
             opacity:0
           }}
@@ -42,6 +41,8 @@ const Home = () => {
             opacity:1
           }}
           src={avatar} alt="" />
+          <motion.p {...easeMoveTop}>I am front end developer build modern and responsive website using various technology like reactjs and nextjs</motion.p>
+         
           <motion.button {...easeMoveTop} className='btn'>Let's Connect</motion.button>
         </div>
 

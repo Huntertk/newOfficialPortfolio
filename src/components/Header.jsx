@@ -1,4 +1,5 @@
 import React, {useState } from 'react';
+import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion';
 import '../styles/header.scss';
 import {GrTextAlignLeft} from  'react-icons/gr';
@@ -40,25 +41,25 @@ const Header = () => {
         className='heading'
         {...easingItemFromTop}
         >I&apos;M TAUFIK</motion.p>
-        <div className={`${isNavOpen ? 'navOpen' : 'navClose'} navLinksContainer`}>
+        <div className={`${isNavOpen ? 'navOpen' : 'navClose'} navLinksContainer bigScreen`}>
             <motion.div className="navLinks"
             {...easingItemFromTop}
             >
-                <FaRegUserCircle />
+                <FaRegUserCircle className="navLinksIcons" />
                 <br />
                 <span>Profile</span>
                 </motion.div>
             <motion.div className='navLinks'
             {...easingItemFromTop}
             >
-                <TbGridDots />
+                <TbGridDots className="navLinksIcons" />
                 <br />
                 <span>Projects</span>
                 </motion.div>
             <motion.div className='navLinks'
             {...easingItemFromTop}
             >
-                <IoIosSend />
+                <IoIosSend className="navLinksIcons" />
                 <br />
                 <span>Contact</span>
             </motion.div>

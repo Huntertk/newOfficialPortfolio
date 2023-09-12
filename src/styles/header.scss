@@ -6,7 +6,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 1rem; 
-
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 
     .navIconContainer{
         font-size: 1.3rem;
@@ -66,5 +68,43 @@ nav{
         font-size: 1.3rem;
         cursor: pointer;
         background-color: $modalColor;
+    }
+}
+
+
+//Tab Media Queries
+
+@media screen and (min-width: 553px) {
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.1fr;
+
+        align-items: center;
+        .navIconContainer{
+            display: none;
+        }
+        .bigScreen{
+            display: flex;
+        }
+
+        .navLinksContainer{
+            position: unset;
+            background-color: unset;
+            z-index: 0;
+            justify-content: flex-end;
+            margin-left: -3rem;
+            gap: 30px;
+            .navLinks{
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+            }
+            padding: 0;
+            .navLinksIcons{
+                display: none;
+            }
+        }
+
     }
 }

@@ -1,6 +1,9 @@
 @use '../styles/variables.scss' as *;
 .homeMainContainer{
     padding: 1rem 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     
     .topmainContainer{
         display: flex;
@@ -91,4 +94,58 @@
             }
         }
     }
+}
+
+
+@media screen and (min-width: 553px) {
+    .homeMainContainer{
+        padding-top: 2rem;
+
+        .topmainContainer{
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1.5fr 2.5fr;
+
+            .textContainer{
+
+                h1{
+                    font-size: 2rem;
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1020px) {
+    .homeMainContainer {
+    
+            .topmainContainer {
+                display: grid;
+                gap: 3rem;
+                grid-template-columns: 1fr 1.5fr;
+    
+                .textContainer {
+
+                    h1{
+                        text-align: left;
+                    }
+                    p{
+                        text-align: left;
+                    }
+                    img{
+                        text-align: left;
+                        width: 200px;
+                        margin-right: auto;
+                        margin-left: 0;
+                    }
+                    .btn{
+                        display: block;
+                        margin-right: auto;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
 }

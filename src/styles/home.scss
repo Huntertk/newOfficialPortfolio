@@ -1,0 +1,28 @@
+@use '../styles/variables.scss' as *;
+.homeMainContainer{
+    padding: 1rem 2rem;
+    .topmainContainer{
+
+        .textContainer{
+            text-align: center;
+
+            h1{
+                margin: 1rem  0;
+                letter-spacing: 3px;
+                font-size: 3rem;
+                font-family: cursive;
+            }
+            p{
+                margin: 1rem 0;
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+            img{
+                display: block;
+                width: 60%;
+                margin: 1rem auto;
+            }
+        }
+    }
+}

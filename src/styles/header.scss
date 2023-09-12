@@ -1,0 +1,70 @@
+@use '../styles/variables.scss' as *;
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+
+
+    .navIconContainer{
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .heading{
+        font-family: $headingFont;
+        letter-spacing: 4px;
+        font-size: 1.2rem;
+    }
+
+    .navLinksContainer{
+        
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        background-color: $modalColor;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        padding: 1rem;
+        text-align: center;
+        
+        .navLinks{
+            padding: 1rem;
+           font-size: 1.1rem;
+           background-color: $backgroundColor;
+           border-radius: 8px;
+
+           svg{
+                font-size: 1.4rem;
+           }
+
+            span{
+                display: inline-block;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+        .navClose {
+            display: none;
+        }
+        
+        .navOpen {
+            display: grid;
+        }
+
+    .themeButtonContainer{
+        display: flex;
+        border-radius: 8px;
+        padding: 0.3rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        background-color: $modalColor;
+    }
+}

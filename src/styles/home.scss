@@ -1,8 +1,11 @@
 @use '../styles/variables.scss' as *;
 .homeMainContainer{
     padding: 1rem 2rem;
+    
     .topmainContainer{
-
+        display: flex;
+        flex-direction: column;
+        
         .textContainer{
             text-align: center;
 
@@ -22,6 +25,69 @@
                 display: block;
                 width: 60%;
                 margin: 1rem auto;
+            }
+
+            .btn{
+                padding: 0.6rem 0;
+                width: 200px;
+                border: none;
+                border-radius: 20px;
+                margin: 0.4rem 0;
+                background-color: $modalColor;
+                color: $fontColor;
+                font-size: 1.1rem;
+                outline: none;
+            }
+        }
+
+
+        .homeBottomContainer{
+
+
+            margin: 2rem 0;
+            .modalMainContainer{
+                background-color: $modalColor;
+                border: 1px solid $modalColor;
+                border-top-right-radius: 24px;
+                border-top-left-radius: 24px;
+            }
+
+            .modalTopContainer{
+                height: 40px;
+                background-color: $backgroundColor;
+                width: 100%;
+                border-top-right-radius: 23px;
+                border-top-left-radius: 23px;
+                position: relative;
+                .dot{
+                    top: 10px;
+                    left: 20px;
+                    position: absolute;
+                    width: 20px;
+                    border-radius: 50%;
+                    height:20px;
+                    background-color: $modalColor;
+                    &:nth-child(2){
+                        left: 60px;
+                    }
+                    &:nth-child(3){
+                        left: 100px;
+                    }
+                }
+            }
+
+            .modalBottomContainer{
+                padding: 2rem 1rem;
+
+                h1{
+                    font-size: 1.6rem;
+                }
+
+                p{
+                    font-size: 1.1rem;
+                    margin: 1rem 0;
+                    line-height: 1.6;
+                }
             }
         }
     }

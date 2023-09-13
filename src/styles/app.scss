@@ -12,6 +12,7 @@ body{
     font-family: $textFont;
     color: $fontColor;
     background-color: $backgroundColor;
+    overflow-x: hidden;
 }
 
 img{

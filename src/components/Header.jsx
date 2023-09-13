@@ -40,28 +40,28 @@ const Header = () => {
         <motion.p 
         className='heading'
         {...easingItemFromTop}
-        ><Link to="/">I&apos;M TAUFIK</Link></motion.p>
+        ><Link to="/" onClick={() => setisNavOpen(false)}>I&apos;M TAUFIK</Link></motion.p>
         <div className={`${isNavOpen ? 'navOpen' : 'navClose'} navLinksContainer bigScreen`}>
             <motion.div className="navLinks"
             {...easingItemFromTop}
             >
                 <FaRegUserCircle className="navLinksIcons" />
                 <br />
-                <Link to="/profile"><span>Profile</span></Link>
+                <Link to="/profile" onClick={() => setisNavOpen(false)}><span >Profile</span></Link>
                 </motion.div>
             <motion.div className='navLinks'
             {...easingItemFromTop}
             >
                 <TbGridDots className="navLinksIcons" />
                 <br />
-                <Link to="/projects"><span>Projects</span></Link>
+                <Link to="/projects" onClick={() => setisNavOpen(false)}><span>Projects</span></Link>
                 </motion.div>
             <motion.div className='navLinks'
             {...easingItemFromTop}
             >
                 <IoIosSend className="navLinksIcons" />
                 <br />
-                <Link to="/contact"><span>Contact</span></Link>
+                <Link to="/contact" onClick={() => setisNavOpen(false)}><span>Contact</span></Link>
             </motion.div>
         </div>
         <a href="mailto: taufik.khan65@gmail.com">

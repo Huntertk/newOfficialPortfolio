@@ -1,7 +1,8 @@
 import React from 'react'
 import '../styles/home.scss'
-import Skills from './Skills'
+import Skills from '../components/Skills'
 import HomeIntroContainer from '../components/HomeIntroContainer'
+import Projects from '../components/Projects'
 
 
 
@@ -11,6 +12,7 @@ const Home = () => {
     <section className='homeMainContainer'>
       <HomeIntroContainer />
       <Skills />
+      <Projects />
     </section>
   )
 }

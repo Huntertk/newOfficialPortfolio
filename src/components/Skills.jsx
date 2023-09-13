@@ -24,17 +24,6 @@ import {SiExpress} from 'react-icons/si'
 
 const Skills = () => {
 
-  const easingItemTop={
-    initial:{
-      y:"-100%",
-      opacity:0
-    },
-    whileInView:{
-      y:0,
-      opacity:1
-    },
-    transition:{duration:0.5}
-  }
 
   const easingItemBottom={
     initial:{
@@ -45,12 +34,11 @@ const Skills = () => {
       y:0,
       opacity:1
     },
-    transition:{duration:0.5}
   }
 
   const easingItemRight={
     initial:{
-      x:"100%",
+      x:"-100%",
       opacity:0
     },
     whileInView:{
@@ -77,7 +65,7 @@ const Skills = () => {
 
   return (
     <section className='skillsMainContainer'>
-      <h1><FaLessThan/><span>Skills /</span><FaGreaterThan/></h1>
+      <motion.h1 {...easingItemBottom}><FaLessThan/><span>Skills /</span><FaGreaterThan/></motion.h1>
       <div className="skillsIconsMainContainer">
         <motion.div 
         {...easingItemLeft}

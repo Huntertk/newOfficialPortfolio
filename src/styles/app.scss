@@ -13,6 +13,7 @@ body{
     color: $fontColor;
     background-color: $backgroundColor;
     overflow-x: hidden;
+    user-select: none;
 }
 
 img{

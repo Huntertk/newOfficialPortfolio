@@ -64,12 +64,14 @@ const Header = () => {
                 <Link to="/contact"><span>Contact</span></Link>
             </motion.div>
         </div>
-        <motion.div 
-        className='themeButtonContainer'
-        {...easingItemFromTop}
-        >
-            <MdEmail />
-        </motion.div>
+        <a href="mailto: taufik.khan65@gmail.com">
+            <motion.div 
+            className='themeButtonContainer'
+            {...easingItemFromTop}
+            >
+                <MdEmail /> 
+            </motion.div>
+        </a>
     </nav>
   )
 }

@@ -38,7 +38,7 @@ const Projects = () => {
             {...easingScalUp} 
             className="projectCard">
                 <h2>TwinTown</h2>
-                <p>This is my internship project i am developing the whole website. This Project built in React Js and Sass and It is Fully Responsive.</p>
+                <p>This is my internship project i am developing the whole website. This Project built in React Js and Css and It is Fully Responsive.</p>
                 <img src={imgThree} alt="" />
             </motion.div>
 

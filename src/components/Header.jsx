@@ -37,32 +37,44 @@ const Header = () => {
                : <GrTextAlignLeft />
             }
         </motion.div>
-        <motion.p 
-        className='heading'
-        {...easingItemFromTop}
-        ><Link to="/" onClick={() => setisNavOpen(false)}>I&apos;M TAUFIK</Link></motion.p>
+        <Link to="/" onClick={() => setisNavOpen(false)}>
+            <motion.p 
+            className='heading'
+            {...easingItemFromTop}
+            >
+                    I&apos;M TAUFIK
+            </motion.p>
+        </Link>
         <div className={`${isNavOpen ? 'navOpen' : 'navClose'} navLinksContainer bigScreen`}>
-            <motion.div className="navLinks"
-            {...easingItemFromTop}
-            >
-                <FaRegUserCircle className="navLinksIcons" />
-                <br />
-                <Link to="/profile" onClick={() => setisNavOpen(false)}><span >Profile</span></Link>
+            <Link to="/profile" onClick={() => setisNavOpen(false)}>
+                <motion.div className="navLinks"
+                {...easingItemFromTop}
+                >
+                    <FaRegUserCircle className="navLinksIcons" />
+                    <br />
+                        <span >Profile</span>
                 </motion.div>
-            <motion.div className='navLinks'
-            {...easingItemFromTop}
-            >
-                <TbGridDots className="navLinksIcons" />
-                <br />
-                <Link to="/projects" onClick={() => setisNavOpen(false)}><span>Projects</span></Link>
+            </Link>
+
+            <Link to="/projects" onClick={() => setisNavOpen(false)}>
+                <motion.div className='navLinks'
+                {...easingItemFromTop}
+                >
+                    <TbGridDots className="navLinksIcons" />
+                    <br />
+                        <span>Projects</span>
                 </motion.div>
-            <motion.div className='navLinks'
-            {...easingItemFromTop}
-            >
-                <IoIosSend className="navLinksIcons" />
-                <br />
-                <Link to="/contact" onClick={() => setisNavOpen(false)}><span>Contact</span></Link>
-            </motion.div>
+            </Link>
+
+            <Link to="/contact" onClick={() => setisNavOpen(false)}>
+                <motion.div className='navLinks'
+                {...easingItemFromTop}
+                >
+                    <IoIosSend className="navLinksIcons" />
+                    <br />
+                        <span>Contact</span>
+                </motion.div>
+            </Link>
         </div>
         <a href="mailto: taufik.khan65@gmail.com">
             <motion.div 

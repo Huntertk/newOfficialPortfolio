@@ -4,6 +4,7 @@ import Skills from '../components/Skills'
 import HomeIntroContainer from '../components/HomeIntroContainer'
 import Projects from '../components/Projects'
 import Services from '../components/Services'
+import ContactMe from '../components/ContactMe'
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Skills />
       <Projects />
       <Services />
+      <ContactMe />
     </section>
   )
 }

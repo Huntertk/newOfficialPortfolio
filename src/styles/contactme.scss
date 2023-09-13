@@ -1,0 +1,110 @@
+@use '../styles/variables.scss' as *;
+
+.contactMeContainer{
+    margin: 4rem 0;
+    padding: 2rem 1rem;
+    background-color: $modalColor;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 16px;
+
+    .contactTextContainer{
+
+        h1{
+            margin: 1rem 0;
+            letter-spacing: 3px;
+            font-size: 1.8rem;
+        }
+
+
+        p{
+            font-size: 1.1rem;
+            line-height: 1.6;
+            word-spacing: 2px;
+        }
+        .iconContainer{
+            font-size: 1.82rem;
+
+            svg{
+                display: inline-block;
+                margin: 0.5rem;
+            }
+        }
+    }
+
+    .formContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+        input{
+            padding: 1rem 0.5rem;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            outline: none;
+            background-color: $backgroundColor;
+            color: $fontColor;
+            border: 1px solid $backgroundColor;
+            border-radius: 8px;
+
+            &:focus{
+                border-color: $fontColor;
+            }
+        }
+
+        textarea{
+            resize: none;
+            padding: 1rem 0.5rem;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            outline: none;
+            background-color: $backgroundColor;
+            color: $fontColor;
+            border: 1px solid $backgroundColor;
+            border-radius: 8px;
+            &:focus {
+                border-color: $fontColor;
+            }
+        }
+
+
+        button{
+            padding: 0.5rem;
+            color: $fontColor;
+            background-color: $backgroundColor;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            outline: none;
+            border: 1px solid $backgroundColor;
+            border-radius: 8px;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 553px) {
+    .contactMeContainer{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+       display: grid;
+       grid-template-columns: 1fr 1.2fr;
+       gap: 20px;
+
+
+        .contactTextContainer{
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+            p{
+                width: 70%;
+            }
+        }   
+    }
+}

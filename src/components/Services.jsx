@@ -28,7 +28,7 @@ const Services = () => {
             <div className="dot"></div>
             <div className="dot"></div>
           <h3>Cool Personal Website</h3>
-          <p>I build pleasing and  responsive website using React and other frontend frameworks</p>
+          <p>I build pleasing and  responsive website using React and other frontend frameworks.</p>
         </motion.div>
 
         <motion.div {...easeItemFromLeft} className="cardContainer">
@@ -44,7 +44,7 @@ const Services = () => {
           <div className="dot"></div>
           <div className="dot"></div>
           <h3>Web Designing</h3>
-          <p>Designing Website with Modern Layout</p>
+          <p>Designing Website with Modern Layout.</p>
         </motion.div>
       </div>
     </section>

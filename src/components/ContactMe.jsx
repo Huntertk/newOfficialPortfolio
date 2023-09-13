@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/contactme.scss'
 import {BsLinkedin,BsGithub} from 'react-icons/bs'
 import {motion} from 'framer-motion'
+import {toast} from 'react-hot-toast'
 
 const ContactMe = () => {
+    const [email, setEmial] = useState("")
+    const [message, setMessgae] = useState("")
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        toast.success("Message Sent")
+        setEmial("")
+        setMessgae("")
     }
   return (
     <motion.section className='contactMeContainer'
@@ -29,8 +36,8 @@ const ContactMe = () => {
             </div>
         </div>
         <form className="formContainer" onSubmit={handleSubmit}>
-            <input type="text" placeholder='your email' required/>
-            <textarea cols="30" rows="5" placeholder='your message.....' required></textarea>
+            <input value={email} onChange={(e) => setEmial(e.target.value)} type="text" placeholder='your email' required/>
+            <textarea value={message} onChange={(e) => setMessgae(e.target.value)} cols="30" rows="5" placeholder='your message.....' required></textarea>
             <button>Send</button>
         </form>
     </motion.section>

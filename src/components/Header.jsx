@@ -40,28 +40,28 @@ const Header = () => {
         <motion.p 
         className='heading'
         {...easingItemFromTop}
-        >I&apos;M TAUFIK</motion.p>
+        ><Link to="/">I&apos;M TAUFIK</Link></motion.p>
         <div className={`${isNavOpen ? 'navOpen' : 'navClose'} navLinksContainer bigScreen`}>
             <motion.div className="navLinks"
             {...easingItemFromTop}
             >
                 <FaRegUserCircle className="navLinksIcons" />
                 <br />
-                <span>Profile</span>
+                <Link to="/profile"><span>Profile</span></Link>
                 </motion.div>
             <motion.div className='navLinks'
             {...easingItemFromTop}
             >
                 <TbGridDots className="navLinksIcons" />
                 <br />
-                <span>Projects</span>
+                <Link to="/projects"><span>Projects</span></Link>
                 </motion.div>
             <motion.div className='navLinks'
             {...easingItemFromTop}
             >
                 <IoIosSend className="navLinksIcons" />
                 <br />
-                <span>Contact</span>
+                <Link to="/contact"><span>Contact</span></Link>
             </motion.div>
         </div>
         <motion.div 

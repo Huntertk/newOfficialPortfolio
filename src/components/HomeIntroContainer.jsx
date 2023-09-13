@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import avatar from '../assets/taufik.png'
+import { Link } from 'react-router-dom'
 
 const HomeIntroContainer = () => {
       const easeScaleUp = {
@@ -39,7 +40,9 @@ const HomeIntroContainer = () => {
           src={avatar} alt="" />
           <motion.p {...easeMoveTop}>I am front end developer build modern and responsive website using various technology like reactjs and nextjs</motion.p>
          
-          <motion.button {...easeMoveTop} className='btn'>Let's Connect</motion.button>
+          <motion.button {...easeMoveTop} className='btn'>
+              <Link to="/contact">Let's Connect</Link>
+            </motion.button>
         </div>
 
         <div className="homeBottomContainer">
@@ -65,7 +68,9 @@ const HomeIntroContainer = () => {
                 work well in a team make me an ideal candidate for
                 any Front End Developer role.
               </motion.p>
-              <motion.button {...easeScaleUp}>Profile </motion.button>
+              <motion.button {...easeScaleUp}>
+                <Link to="/profile">Profile</Link>
+                </motion.button>
             </div>
           </div>
         </div>

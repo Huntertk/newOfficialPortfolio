@@ -4,6 +4,8 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import { Toaster } from 'react-hot-toast'
 import Profile from './pages/Profile'
+import ProjectsPage from './pages/ProjectsPage'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -13,8 +15,8 @@ const App = () => {
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
           <Route path='/profile' element={<Profile />} />
-          <Route path='/projects' element={<h1>Projects</h1>} />
-          <Route path='/contact' element={<h1>Contact</h1>} />
+          <Route path='/projects' element={<ProjectsPage />} />
+          <Route path='/contact' element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>

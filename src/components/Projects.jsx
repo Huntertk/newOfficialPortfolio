@@ -6,9 +6,6 @@ import '../styles/projects.scss'
 import imgOne from '../assets/almabetter.png'
 import imgTwo from '../assets/mba.png'
 import imgThree from '../assets/twintown.png'
-import imgFour from '../assets/portfolio.png'
-import imgFive from '../assets/ktmclone.png'
-import imgSix from '../assets/wedu.png'
 
 const Projects = () => {
     const easingScalUp = {
@@ -54,31 +51,6 @@ const Projects = () => {
                     <img src={imgTwo} alt="" />
                 </motion.div>
             </a>
-            
-            <a href="https://taufik-second-portfolio-app.netlify.app" target='_blank'>
-                <motion.div {...easingScalUp} className="projectCard">
-                    <h2>Portfolio</h2>
-                    <p>This is Portfolio website. This Project built in React Js and Css and It is Fully Responsive.</p>
-                    <img src={imgFour} alt="" />
-                </motion.div>
-            </a>
-            
-            <a href="https://react-ktm-app-taufik.netlify.app/" target='_blank'>
-                <motion.div {...easingScalUp} className="projectCard">
-                    <h2>KTM Clone</h2>
-                    <p>This is Official KTM Website Clone. This Project built in React Js and Css and It is Fully Responsive.</p>
-                    <img src={imgFive} alt="" />
-                </motion.div>
-            </a>
-
-            <a href="https://nextjs-wedu-app.netlify.app/" target='_blank'>
-                <motion.div {...easingScalUp} className="projectCard">
-                    <h2>WeDu</h2>
-                    <p>This is Digital Marketing Website. This Project built in Next Js and Css and It is Fully Responsive.</p>
-                    <img src={imgSix} alt="" />
-                </motion.div>
-            </a>
-
         </div>
     </section>
   )

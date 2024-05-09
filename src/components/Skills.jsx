@@ -19,8 +19,8 @@ import {
     FaNode,
     FaGithub
 } from 'react-icons/fa'
-
-import {SiExpress} from 'react-icons/si'
+import { TbBrandNextjs } from "react-icons/tb";
+import {SiExpress, SiMongoose } from 'react-icons/si'
 
 const Skills = () => {
 
@@ -75,6 +75,14 @@ const Skills = () => {
           <span>React Js</span>
         </motion.div>
 
+        <motion.div 
+        {...easingItemLeft}
+        className="iconContainer"
+        >
+          <TbBrandNextjs  />
+          <span>Next Js</span>
+        </motion.div>
+
          <motion.div 
         {...easingItemRight} className="iconContainer">
           <SiExpress />
@@ -91,6 +99,13 @@ const Skills = () => {
         {...easingItemLeft} className="iconContainer">
           <BiLogoMongodb />
           <span>MongoDB</span>
+        </motion.div>
+
+        <motion.div 
+        {...easingItemLeft} 
+         className="iconContainer">
+          <SiMongoose />
+          <span>Mongoose</span>
         </motion.div>
 
         <motion.div 
@@ -149,6 +164,8 @@ const Skills = () => {
           <BiLogoNetlify />
           <span>Netlify</span>
         </motion.div>
+
+       
       </div>
     </section>
   )

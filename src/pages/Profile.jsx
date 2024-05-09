@@ -27,7 +27,15 @@ const Profile = () => {
                 <div className="details">
                     <h3>Web Developer Intern</h3>
                     <p className="company">@Engaj Media</p>
-                    <p className="date">From <span>July 2023</span> current</p>
+                    <p className="date">From <span>July 2023</span> Oct 2023</p>
+                </div>
+            </div>
+            <div className="experienceContainer">
+                <p className='companySymbol'>T</p>
+                <div className="details">
+                    <h3>MERN Stack Developer</h3>
+                    <p className="company">@Travelvago</p>
+                    <p className="date">From <span>Oct 2023</span> current</p>
                 </div>
             </div>
         </motion.div>

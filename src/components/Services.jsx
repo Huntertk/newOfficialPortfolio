@@ -27,8 +27,8 @@ const Services = () => {
             <div className="dot"></div>
             <div className="dot"></div>
             <div className="dot"></div>
-          <h3>Cool Personal Website</h3>
-          <p>I build pleasing and  responsive website using React and other frontend frameworks.</p>
+          <h3>Full Stack Project</h3>
+          <p>I build full stack project using mordern tools and language.</p>
         </motion.div>
 
         <motion.div {...easeItemFromLeft} className="cardContainer">

@@ -11,7 +11,8 @@ import {
     BiLogoReact,
     BiLogoMongodb,
     BiLogoNetlify,
-    BiLogoGit
+    BiLogoGit,
+    BiLogoTypescript
 } from 'react-icons/bi'
 import {
     FaSass,
@@ -81,6 +82,13 @@ const Skills = () => {
         >
           <TbBrandNextjs  />
           <span>Next Js</span>
+        </motion.div>
+        <motion.div 
+        {...easingItemLeft}
+        className="iconContainer"
+        >
+          <BiLogoTypescript  />
+          <span>TypeScript</span>
         </motion.div>
 
          <motion.div 

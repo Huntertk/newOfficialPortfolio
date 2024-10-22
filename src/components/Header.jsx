@@ -8,6 +8,7 @@ import {FaRegUserCircle} from 'react-icons/fa';
 import {TbGridDots} from 'react-icons/tb';
 import {IoIosSend} from 'react-icons/io';
 import {RxCross2} from 'react-icons/rx';
+import { IoIosDocument } from "react-icons/io";
 
 const Header = () => {
     const [isNavOpen, setisNavOpen] = useState(false)
@@ -75,6 +76,15 @@ const Header = () => {
                         <span>Contact</span>
                 </motion.div>
             </Link>
+            <a href='https://drive.google.com/file/d/186oQ3u2PfWV-CZqejzKx5-D83rjUcu51/view?usp=sharing' target='__blank'>
+                <motion.div className='navLinks'
+                {...easingItemFromTop}
+                >
+                    <IoIosDocument  className="navLinksIcons" />
+                    <br />
+                        <span>Resume</span>
+                </motion.div>
+            </a>
         </div>
         <a href="mailto: taufik.khan65@gmail.com">
             <motion.div 

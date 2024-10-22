@@ -33,7 +33,7 @@ const Profile = () => {
             <div className="experienceContainer">
                 <p className='companySymbol'>T</p>
                 <div className="details">
-                    <h3>MERN Stack Developer</h3>
+                    <h3>Frontend Developer / System Developer</h3>
                     <p className="company">@Travelvago</p>
                     <p className="date">From <span>Oct 2023</span> current</p>
                 </div>

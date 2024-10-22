@@ -38,7 +38,7 @@ const HomeIntroContainer = () => {
             opacity:1
           }}
           src={avatar} alt="" />
-          <motion.p {...easeMoveTop}>I am mern stack developer building modern and full stack website using various technology like reactjs and nextjs</motion.p>
+          <motion.p {...easeMoveTop}>I am Full Stack Developer building modern and full stack website using various technology like reactjs and nextjs</motion.p>
          
           <motion.button {...easeMoveTop} className='btn'>
               <Link to="/contact">Let's Connect</Link>
@@ -54,19 +54,14 @@ const HomeIntroContainer = () => {
             </div>
             <div className="modalBottomContainer">
               <motion.h1 {...easeScaleUp}>An Introduction</motion.h1>
-              <motion.p {...easeMoveTop}>I am a skilled MERN Stack Developer with over 8 Months of
-                experience in creating responsive and accessible web
-                applications. <br /><br />My expertise includes HTML, CSS,
-                JavaScript, Nodejs, ExpressJs, Mongoose and Advance React framework. I have
-                ability to create Modern Responsive UI.
-                As a developer, I am passionate about creating
-                intuitive and full stack web applicaztions that deliver a
-                seamless user experience. <br /><br />I am always eager to learn
-                new technologies and techniques to enhance my skills
-                and stay up-to-date with industry trends. My attention
-                to detail, strong problem-solving skills, and ability to
-                work well in a team make me an ideal candidate for
-                any MERN STACK Developer role.
+              <motion.p {...easeMoveTop}> Detail-oriented Full Stack Developer with over one year of experience in designing and
+ implementing robust web applications using the MERN stack (MongoDB, Express, React,
+ Node.js). Pro cient in developing user-friendly interfaces and RESTful APIs, with a
+ strong understanding of both front-end and back-end technologies. Committed to
+ optimizing application performance and enhancing user experience, I thrive in
+ collaborative environments and continuously seek to expand my skills. Passionate
+ about leveraging technology to solve real-world problems and deliver high-quality
+ software solutions
               </motion.p>
               <motion.button {...easeScaleUp}>
                 <Link to="/profile">Profile</Link>

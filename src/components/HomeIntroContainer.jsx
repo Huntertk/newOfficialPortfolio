@@ -54,14 +54,7 @@ const HomeIntroContainer = () => {
             </div>
             <div className="modalBottomContainer">
               <motion.h1 {...easeScaleUp}>An Introduction</motion.h1>
-              <motion.p {...easeMoveTop}> Detail-oriented Full Stack Developer with over one year of experience in designing and
- implementing robust web applications using the MERN stack (MongoDB, Express, React,
- Node.js). Pro cient in developing user-friendly interfaces and RESTful APIs, with a
- strong understanding of both front-end and back-end technologies. Committed to
- optimizing application performance and enhancing user experience, I thrive in
- collaborative environments and continuously seek to expand my skills. Passionate
- about leveraging technology to solve real-world problems and deliver high-quality
- software solutions
+              <motion.p {...easeMoveTop}> I am Detail-oriented Full Stack Developer with over one year of experience in designing and implementing robust web applications using the MERN stack (MongoDB, Express, React, Node.js). Proficient in developing user-friendly interfaces and RESTful APIs, with a strong understanding of both front-end and back-end technologies. Committed to optimizing application performance and enhancing user experience, I thrive in collaborative environments and continuously seek to expand my skills. Passionate about leveraging technology to solve real-world problems and deliver high-quality software solutions.
               </motion.p>
               <motion.button {...easeScaleUp}>
                 <Link to="/profile">Profile</Link>

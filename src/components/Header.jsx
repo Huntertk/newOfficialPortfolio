@@ -76,7 +76,7 @@ const Header = () => {
                         <span>Contact</span>
                 </motion.div>
             </Link>
-            <a href='https://drive.google.com/file/d/186oQ3u2PfWV-CZqejzKx5-D83rjUcu51/view?usp=sharing' target='__blank'>
+            <a href='https://drive.google.com/file/d/1loWstMl25Z6f1BhcV3RWW5s9DWPT5_Vy/view?usp=drive_link' target='__blank'>
                 <motion.div className='navLinks'
                 {...easingItemFromTop}
                 >

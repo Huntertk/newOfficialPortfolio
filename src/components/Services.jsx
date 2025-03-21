@@ -28,7 +28,7 @@ const Services = () => {
             <div className="dot"></div>
             <div className="dot"></div>
           <h3>Full Stack Project</h3>
-          <p>I build full stack project using mordern tools and language.</p>
+          <p>I build full stack project using modern tools and language.</p>
         </motion.div>
 
         <motion.div {...easeItemFromLeft} className="cardContainer">
